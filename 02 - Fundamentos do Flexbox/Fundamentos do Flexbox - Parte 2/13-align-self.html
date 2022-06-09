@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align-self</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            display: flex;
+          /*  align-items: center;*/
+        }
+        
+        .align-container{
+            align-items: center;
+        }
+
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <section class="container align-container">
+        <div class="item auto">1</div>
+        <div class="item auto">2</div>
+        <div class="item auto">3</div>
+        <div class="item auto">4 - Conteudo com mais informações </div>
+        <div class="item auto">5</div>
+    </section>
+
+    <section class="container">
+        <div class="item center">1</div>
+        <div class="item start">2</div>
+        <div class="item baseline">3</div>
+        <div class="item stretch">4 - Conteudo com mais informações </div>
+        <div class="item end">5</div>
+    </section>
+
+    <section class="container">
+        <div class="item center">111</div>
+        <div class="item start">2222</div>
+        <div class="item end">33333</div>
+        <div class="item stretch">44444 4444444 444444444</div>
+    </section>
+    
+    <h1>column</h1>
+    <section class="container align-container direction">
+        <div class="item auto">1</div>
+        <div class="item auto">2</div>
+        <div class="item auto">3</div>
+        <div class="item auto">4 - Conteudo com mais informações </div>
+        <div class="item auto">5</div>
+    </section>
+
+    <section class="container direction">
+        <div class="item center">1</div>
+        <div class="item start">2</div>
+        <div class="item baseline">3</div>
+        <div class="item stretch">4 - Conteudo com mais informações </div>
+        <div class="item end">5</div>
+    </section>
+
+    <section class="container direction">
+        <div class="item center">111</div>
+        <div class="item start">2222</div>
+        <div class="item end">33333</div>
+        <div class="item stretch">44444 4444444 444444444</div>
+    </section>
+</body>
+</html>
