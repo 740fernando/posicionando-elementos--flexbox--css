@@ -90,5 +90,8 @@ flex-grow define a habilidade de um elemento-filha de "crescer" e ocupar uma ár
   }
 
 ![image](https://user-images.githubusercontent.com/32016610/173563288-f072333f-45c7-4214-80ef-2a41a2befe16.png)
+ 
+ ![image](https://user-images.githubusercontent.com/32016610/173563748-4d918ce7-d4fd-4cad-b2fd-f21d39dda8ae.png)
+
 
 Existem outras propriedades para as filhas, como flex-shrink, flex-basis e a shorthand flex, você pode pesquisar sobre elas para aumentar seu repertório.
